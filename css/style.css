@@ -1,0 +1,51 @@
+@import url(variables.css);
+@import url(buttons.css);
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, .5);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.w-5 {
+    width: 5%;
+}
+
+.w-50 {
+    width: 50%;
+}
+.navbar-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu ul li a.navbar-link {
+    color: black;
+    padding: 1rem 1rem;
+    display: inline-block;
+}
+.navbar-menu  ul li a.navbar-link::after {
+    width: 12px;
+    height: 12px;
+    content: '';
+    margin-left: 5px;
+    vertical-align: sub;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/chevron-down-solid.svg');
+}
