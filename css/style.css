@@ -1,11 +1,16 @@
 @import url(variables.css);
 @import url(buttons.css);
+@import url(utilitis.css);
 header{
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
+    z-index: 99;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, .5);
+}
+main {
+    margin-top: 110px;
 }
 ul{
     margin: 0;
@@ -22,9 +27,28 @@ a {
 .w-5 {
     width: 5%;
 }
-
 .w-50 {
     width: 50%;
+}
+.z-index-99{
+    z-index: 99;
+}
+.min-h {
+    min-height: 500px;
+}
+.bg-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 .navbar-menu {
     flex-grow: 1;
@@ -48,4 +72,18 @@ a {
     background-position: center;
     background-size: cover;
     background-image: url('../img/chevron-down-solid.svg');
+}
+
+.pt-15 {
+    padding-top: 15rem;
+}
+.my-rounded-1 {
+    border-radius: 1rem;
+}
+.my-img-fluid {
+    top: 0;
+    right: 10%;
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
 }
