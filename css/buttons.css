@@ -4,14 +4,33 @@
         transition: all .3s;
     }
     .btn-gray:hover {
-        border: 2px solid var(--bs-gray);
+        border-color: var(--bs-gray);
         color: white;
         box-shadow: inset 0 0 0 2px #fff;
     }
     .btn {
         border-radius: 16px;
+        border: 2px solid transparent;
+        border-color: transparent;
     }
     .btn-danger:hover {
-        border: 2px solid var(--bs-danger);
+        border-color: var(--bs-danger);
         box-shadow: inset 0 0 0 2px #fff;
+    }
+
+    .btn-primary:hover {
+        border-color: var(--bs-primary);
+        box-shadow: inset 0 0 0 2px #fff;
+    }
+    .btn-gray-500-light {
+        background-color: var(--bs-gray-500-light);
+    }
+    .btn-gray-500-light:hover {
+        background-color: var(--bs-gray-500-dark);
+        border-color: var(--bs-gray-500-dark);
+        box-shadow: inset 0 0 0 2px var(--bs-primary);
+    }
+    .btn-light:hover {
+        border-color: var(--bs-light);
+        box-shadow: inset 0 0 0 2px #000;
     }

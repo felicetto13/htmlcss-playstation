@@ -1,6 +1,7 @@
 @import url(variables.css);
 @import url(buttons.css);
 @import url(utilitis.css);
+@import url(animation.css);
 header{
     position: fixed;
     left: 0;
@@ -26,6 +27,9 @@ a {
 
 .w-5 {
     width: 5%;
+}
+.w-30 {
+    width: 30%;
 }
 .w-50 {
     width: 50%;
@@ -87,6 +91,15 @@ a {
     max-width: 50%;
     object-fit: cover;
 }
+footer ul li a {
+    color: white;
+}
+footer ul li a:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+ 
 @media screen and (max-width:1200px) and (min-width:990px) {
     .my-img-fluid {
         max-width: 100%;

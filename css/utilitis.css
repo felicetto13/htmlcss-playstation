@@ -7,3 +7,6 @@
 .my-bg-secondary {
     background-color: var(--bs-secondary);
 }
+.bg-footer {
+    background-color: var(--bs-footer);
+}

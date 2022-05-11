@@ -1,0 +1,58 @@
+img.w-100.my-rounded-1 {
+    animation-play-state: paused;
+}
+.col.col-lg-2:hover img.w-100.my-rounded-1 {
+    animation-name: rotazione;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-iteration-count:1;
+}
+.col-6.col-lg-2 {
+    border-bottom: 2px solid transparent;
+}
+.col-6.col-lg-2:hover {
+    animation-name: border-progress;
+    animation-duration: 2s;
+    animation-play-state: paused;
+    animation-iteration-count:1;
+}
+@keyframes border-progress {
+    0% {
+        border-bottom: 2px solid var(--bs-primary);
+    }
+    50% {
+        border-bottom: 2px solid var(--bs-primary);
+    }
+    100% {
+        border-bottom: 2px solid var(--bs-primary);
+    }
+}
+@keyframes scalata {
+    0% {
+        transform: scale(.5);
+    }
+    
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(.5);
+    }
+}
+
+@keyframes rotazione {
+    0% {
+        transform: rotateY(0deg);
+    }
+    /* 25% {
+        transform: rotateY(90deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    } */
+    100% {
+        transform: rotateY(360deg);
+    }
+    
+}
