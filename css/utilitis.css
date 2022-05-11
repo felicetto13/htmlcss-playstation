@@ -4,3 +4,6 @@
 .bg-gray-500 {
     background-color: var(--bs-gray-500);
 }
+.my-bg-secondary {
+    background-color: var(--bs-secondary);
+}

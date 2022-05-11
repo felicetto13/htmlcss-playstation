@@ -82,8 +82,14 @@ a {
 }
 .my-img-fluid {
     top: 0;
-    right: 10%;
+    right: 5%;
     height: 100%;
-    width: 40%;
+    max-width: 50%;
     object-fit: cover;
+}
+@media screen and (max-width:1200px) and (min-width:990px) {
+    .my-img-fluid {
+        max-width: 100%;
+        right: 0;
+    }
 }
