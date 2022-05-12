@@ -1,25 +1,37 @@
 img.w-100.my-rounded-1 {
     animation-play-state: paused;
+    margin-bottom: 1rem;
 }
-.col.col-lg-2:hover img.w-100.my-rounded-1 {
+.col-6.col-sm-4.col-lg-2:hover img.w-100.my-rounded-1 {
     animation-name: rotazione;
     animation-duration: 2s;
     animation-play-state: running;
     animation-iteration-count:1;
 }
-.col-6.col-lg-2 {
+.col-6.col-sm-4.col-md-2 {
     border-bottom: 2px solid transparent;
 }
-.col-6.col-lg-2:hover {
+.col-6.col-sm-4.col-md-2:hover {
     animation-name: border-progress;
     animation-duration: 2s;
     animation-play-state: paused;
     animation-iteration-count:1;
 }
+.col-6.col-sm-3.col-md-2:hover img{
+    animation-name: scalata;
+    animation-duration: .7s;
+    animation-play-state:paused;
+}
+.col-12.col-md-4.mb-4:hover img {
+    animation-name: scalata;
+    animation-duration: .7s;
+    animation-play-state:paused;
+}
+
 @keyframes border-progress {
     0% {
         border-bottom: 2px solid var(--bs-primary);
-    }
+    } 
     50% {
         border-bottom: 2px solid var(--bs-primary);
     }
@@ -28,16 +40,18 @@ img.w-100.my-rounded-1 {
     }
 }
 @keyframes scalata {
+   /*  0% {
+        transform: scale(.5);
+    }
+     */
     0% {
-        transform: scale(.5);
-    }
-    
-    50% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(.5);
-    }
+        transform: scale(1.2);
+        animation-play-state: running;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+}
 }
 
 @keyframes rotazione {
